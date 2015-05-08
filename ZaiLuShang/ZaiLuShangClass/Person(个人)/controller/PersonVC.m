@@ -16,22 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self createTitleView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)createTitleView
+{
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, HEIGHT_STA, CGW(self.view), HEIGHT_NAV)];
+    view.backgroundColor = CXColorP(150, 150, 150, 0.2);
+    view.userInteractionEnabled = YES;
+    [self.view addSubview:view];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGW(self.view), CGH(view))];
+    label.text = @"未登录";
+    label.center = view.center;
+    label.textColor = [UIColor whiteColor];
+    [view addSubview:label];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
