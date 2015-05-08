@@ -1228,7 +1228,6 @@
 		BC5BF83F1AFCE183002A053F /* logo_statusbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5BF3C11AFCE183002A053F /* logo_statusbar.png */; };
 		BC5BF8401AFCE183002A053F /* map_pop_single.9.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5BF3C21AFCE183002A053F /* map_pop_single.9.png */; };
 		BC5BF8411AFCE183002A053F /* subscription_pop.9.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5BF3C31AFCE183002A053F /* subscription_pop.9.png */; };
->>>>>>> origin/master
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2537,7 +2536,7 @@
 		BC5BF3C11AFCE183002A053F /* logo_statusbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_statusbar.png; sourceTree = "<group>"; };
 		BC5BF3C21AFCE183002A053F /* map_pop_single.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pop_single.9.png; sourceTree = "<group>"; };
 		BC5BF3C31AFCE183002A053F /* subscription_pop.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = subscription_pop.9.png; sourceTree = "<group>"; };
->>>>>>> origin/master
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4223,7 +4222,6 @@
 				BC5BF3C31AFCE183002A053F /* subscription_pop.9.png */,
 			);
 			path = "drawable-xxhdpi-v4";
->>>>>>> origin/master
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
