@@ -75,6 +75,8 @@
 		BCD498511AFCE1C800BEA0E9 /* SFSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498501AFCE1C800BEA0E9 /* SFSearchModel.m */; };
 		BCD498541AFCE2B900BEA0E9 /* SFTactickBanners.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498531AFCE2B900BEA0E9 /* SFTactickBanners.m */; };
 		BCD4985A1AFCE5BD00BEA0E9 /* SFSearchDisplayModule.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498591AFCE5BD00BEA0E9 /* SFSearchDisplayModule.m */; };
+		BCD4985E1AFCEC8E00BEA0E9 /* SFSceneryCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD4985C1AFCEC8E00BEA0E9 /* SFSceneryCellTableViewCell.m */; };
+		BCD4985F1AFCEC8E00BEA0E9 /* SFSceneryCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD4985D1AFCEC8E00BEA0E9 /* SFSceneryCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,6 +230,9 @@
 		BCD498531AFCE2B900BEA0E9 /* SFTactickBanners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTactickBanners.m; sourceTree = "<group>"; };
 		BCD498581AFCE5BD00BEA0E9 /* SFSearchDisplayModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSearchDisplayModule.h; sourceTree = "<group>"; };
 		BCD498591AFCE5BD00BEA0E9 /* SFSearchDisplayModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSearchDisplayModule.m; sourceTree = "<group>"; };
+		BCD4985B1AFCEC8E00BEA0E9 /* SFSceneryCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSceneryCellTableViewCell.h; sourceTree = "<group>"; };
+		BCD4985C1AFCEC8E00BEA0E9 /* SFSceneryCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSceneryCellTableViewCell.m; sourceTree = "<group>"; };
+		BCD4985D1AFCEC8E00BEA0E9 /* SFSceneryCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFSceneryCellTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -718,6 +723,9 @@
 		BCD498421AFCDF8000BEA0E9 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				BCD4985B1AFCEC8E00BEA0E9 /* SFSceneryCellTableViewCell.h */,
+				BCD4985C1AFCEC8E00BEA0E9 /* SFSceneryCellTableViewCell.m */,
+				BCD4985D1AFCEC8E00BEA0E9 /* SFSceneryCellTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -802,6 +810,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD4985F1AFCEC8E00BEA0E9 /* SFSceneryCellTableViewCell.xib in Resources */,
 				BC5BEE521AFCCEB6002A053F /* Images.xcassets in Resources */,
 				BC5BEF131AFCD422002A053F /* MBProgressHUD.bundle in Resources */,
 				BC5BEF1F1AFCD422002A053F /* MJRefresh.bundle in Resources */,
@@ -877,6 +886,7 @@
 				BC5BEF0A1AFCD422002A053F /* AFNetworkReachabilityManager.m in Sources */,
 				BC5BEF271AFCD422002A053F /* NSData+ImageContentType.m in Sources */,
 				BC5BEF151AFCD422002A053F /* MyMD5.m in Sources */,
+				BCD4985E1AFCEC8E00BEA0E9 /* SFSceneryCellTableViewCell.m in Sources */,
 				BC5BEF1D1AFCD422002A053F /* NSObject+MJKeyValue.m in Sources */,
 				BC5BEF0F1AFCD422002A053F /* AFURLResponseSerialization.m in Sources */,
 				BC5BEF371AFCD422002A053F /* RequestTool.m in Sources */,
