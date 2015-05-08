@@ -1220,6 +1220,13 @@
 		BC5BF83F1AFCE183002A053F /* logo_statusbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5BF3C11AFCE183002A053F /* logo_statusbar.png */; };
 		BC5BF8401AFCE183002A053F /* map_pop_single.9.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5BF3C21AFCE183002A053F /* map_pop_single.9.png */; };
 		BC5BF8411AFCE183002A053F /* subscription_pop.9.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5BF3C31AFCE183002A053F /* subscription_pop.9.png */; };
+		BCD4986B1AFCF72B00BEA0E9 /* SFLinkTitleList.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498621AFCF72B00BEA0E9 /* SFLinkTitleList.m */; };
+		BCD4986C1AFCF72B00BEA0E9 /* SFSearchDisplayModule.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498641AFCF72B00BEA0E9 /* SFSearchDisplayModule.m */; };
+		BCD4986D1AFCF72B00BEA0E9 /* SFSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498661AFCF72B00BEA0E9 /* SFSearchModel.m */; };
+		BCD4986E1AFCF72B00BEA0E9 /* SFTactick.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498681AFCF72B00BEA0E9 /* SFTactick.m */; };
+		BCD4986F1AFCF72B00BEA0E9 /* SFTactickBanners.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD4986A1AFCF72B00BEA0E9 /* SFTactickBanners.m */; };
+		BCD498741AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498721AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.m */; };
+		BCD498751AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD498731AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2513,6 +2520,19 @@
 		BC5BF3C11AFCE183002A053F /* logo_statusbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_statusbar.png; sourceTree = "<group>"; };
 		BC5BF3C21AFCE183002A053F /* map_pop_single.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pop_single.9.png; sourceTree = "<group>"; };
 		BC5BF3C31AFCE183002A053F /* subscription_pop.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = subscription_pop.9.png; sourceTree = "<group>"; };
+		BCD498611AFCF72B00BEA0E9 /* SFLinkTitleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLinkTitleList.h; sourceTree = "<group>"; };
+		BCD498621AFCF72B00BEA0E9 /* SFLinkTitleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLinkTitleList.m; sourceTree = "<group>"; };
+		BCD498631AFCF72B00BEA0E9 /* SFSearchDisplayModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSearchDisplayModule.h; sourceTree = "<group>"; };
+		BCD498641AFCF72B00BEA0E9 /* SFSearchDisplayModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSearchDisplayModule.m; sourceTree = "<group>"; };
+		BCD498651AFCF72B00BEA0E9 /* SFSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSearchModel.h; sourceTree = "<group>"; };
+		BCD498661AFCF72B00BEA0E9 /* SFSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSearchModel.m; sourceTree = "<group>"; };
+		BCD498671AFCF72B00BEA0E9 /* SFTactick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTactick.h; sourceTree = "<group>"; };
+		BCD498681AFCF72B00BEA0E9 /* SFTactick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTactick.m; sourceTree = "<group>"; };
+		BCD498691AFCF72B00BEA0E9 /* SFTactickBanners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTactickBanners.h; sourceTree = "<group>"; };
+		BCD4986A1AFCF72B00BEA0E9 /* SFTactickBanners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTactickBanners.m; sourceTree = "<group>"; };
+		BCD498711AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSceneryCellTableViewCell.h; sourceTree = "<group>"; };
+		BCD498721AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSceneryCellTableViewCell.m; sourceTree = "<group>"; };
+		BCD498731AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFSceneryCellTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2895,8 +2915,6 @@
 			isa = PBXGroup;
 			children = (
 				BC5BEEF31AFCD422002A053F /* controller */,
-				BC5BEEF61AFCD422002A053F /* model */,
-				BC5BEEF71AFCD422002A053F /* view */,
 			);
 			path = "Person(个人)";
 			sourceTree = "<group>";
@@ -2910,26 +2928,12 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		BC5BEEF61AFCD422002A053F /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		BC5BEEF71AFCD422002A053F /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
 		BC5BEEF81AFCD422002A053F /* Search(搜索) */ = {
 			isa = PBXGroup;
 			children = (
+				BCD498701AFCF73000BEA0E9 /* view */,
+				BCD498601AFCF72B00BEA0E9 /* model */,
 				BC5BEEF91AFCD422002A053F /* controller */,
-				BC5BEEFC1AFCD422002A053F /* model */,
-				BC5BEEFD1AFCD422002A053F /* view */,
 			);
 			path = "Search(搜索)";
 			sourceTree = "<group>";
@@ -2941,20 +2945,6 @@
 				BC5BEEFB1AFCD422002A053F /* SearchVC.m */,
 			);
 			path = controller;
-			sourceTree = "<group>";
-		};
-		BC5BEEFC1AFCD422002A053F /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		BC5BEEFD1AFCD422002A053F /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		BC5BEEFE1AFCD422002A053F /* Square(广场) */ = {
@@ -4179,6 +4169,33 @@
 			path = "drawable-xxhdpi-v4";
 			sourceTree = "<group>";
 		};
+		BCD498601AFCF72B00BEA0E9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BCD498611AFCF72B00BEA0E9 /* SFLinkTitleList.h */,
+				BCD498621AFCF72B00BEA0E9 /* SFLinkTitleList.m */,
+				BCD498631AFCF72B00BEA0E9 /* SFSearchDisplayModule.h */,
+				BCD498641AFCF72B00BEA0E9 /* SFSearchDisplayModule.m */,
+				BCD498651AFCF72B00BEA0E9 /* SFSearchModel.h */,
+				BCD498661AFCF72B00BEA0E9 /* SFSearchModel.m */,
+				BCD498671AFCF72B00BEA0E9 /* SFTactick.h */,
+				BCD498681AFCF72B00BEA0E9 /* SFTactick.m */,
+				BCD498691AFCF72B00BEA0E9 /* SFTactickBanners.h */,
+				BCD4986A1AFCF72B00BEA0E9 /* SFTactickBanners.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BCD498701AFCF73000BEA0E9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BCD498711AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.h */,
+				BCD498721AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.m */,
+				BCD498731AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -5269,6 +5286,7 @@
 				BC5BF4271AFCE183002A053F /* icon_inputbox_delete.png in Resources */,
 				BC5BF7261AFCE183002A053F /* icon_qrcode_blue_32.png in Resources */,
 				BC5BF79B1AFCE183002A053F /* icon_tag_spot_white_40.png in Resources */,
+				BCD498751AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.xib in Resources */,
 				BC5BF6C01AFCE183002A053F /* icon_good_red_line_40.png in Resources */,
 				BC5BF78D1AFCE183002A053F /* icon_tag_play_rainbow_40.png in Resources */,
 				BC5BF4951AFCE183002A053F /* splash_guide_title_2.png in Resources */,
@@ -5433,8 +5451,10 @@
 				BC5BEF2D1AFCD422002A053F /* SDWebImageManager.m in Sources */,
 				BC5BEF221AFCD422002A053F /* MJRefreshFooterView.m in Sources */,
 				BC5BEF1C1AFCD422002A053F /* NSObject+MJCoding.m in Sources */,
+				BCD4986D1AFCF72B00BEA0E9 /* SFSearchModel.m in Sources */,
 				BC5BEF231AFCD422002A053F /* MJRefreshHeaderView.m in Sources */,
 				BC5BEF101AFCD422002A053F /* AFURLSessionManager.m in Sources */,
+				BCD4986C1AFCF72B00BEA0E9 /* SFSearchDisplayModule.m in Sources */,
 				BC5BEF121AFCD422002A053F /* MBProgressHUD+MJ.m in Sources */,
 				BC5BEF0D1AFCD422002A053F /* AFURLConnectionOperation.m in Sources */,
 				BC5BEF261AFCD422002A053F /* MKAnnotationView+WebCache.m in Sources */,
@@ -5445,13 +5465,16 @@
 				BC5BEF041AFCD422002A053F /* BadgeButten.m in Sources */,
 				BC5BEF281AFCD422002A053F /* SDImageCache.m in Sources */,
 				BC5BEF021AFCD422002A053F /* MainNavigationC.m in Sources */,
+				BCD4986F1AFCF72B00BEA0E9 /* SFTactickBanners.m in Sources */,
 				BC5BEF111AFCD422002A053F /* GXCycleScrollView.m in Sources */,
+				BCD4986B1AFCF72B00BEA0E9 /* SFLinkTitleList.m in Sources */,
 				BC5BEF141AFCD422002A053F /* MBProgressHUD.m in Sources */,
 				BC5BEF311AFCD422002A053F /* UIImage+MultiFormat.m in Sources */,
 				BC5BEF331AFCD422002A053F /* UIImageView+HighlightedWebCache.m in Sources */,
 				BC5BEF051AFCD422002A053F /* MainTabBar.m in Sources */,
 				BC5BEF071AFCD422002A053F /* AFHTTPRequestOperation.m in Sources */,
 				BC5BEE4A1AFCCEB6002A053F /* AppDelegate.m in Sources */,
+				BCD4986E1AFCF72B00BEA0E9 /* SFTactick.m in Sources */,
 				BC5BEF301AFCD422002A053F /* UIImage+GIF.m in Sources */,
 				BC5BEF291AFCD422002A053F /* SDWebImageCompat.m in Sources */,
 				BC5BEF161AFCD422002A053F /* MJArgument.m in Sources */,
@@ -5479,6 +5502,7 @@
 				BC5BEF0A1AFCD422002A053F /* AFNetworkReachabilityManager.m in Sources */,
 				BC5BEF271AFCD422002A053F /* NSData+ImageContentType.m in Sources */,
 				BC5BEF151AFCD422002A053F /* MyMD5.m in Sources */,
+				BCD498741AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.m in Sources */,
 				BC5BEF1D1AFCD422002A053F /* NSObject+MJKeyValue.m in Sources */,
 				BC5BEF0F1AFCD422002A053F /* AFURLResponseSerialization.m in Sources */,
 				BC5BEF371AFCD422002A053F /* RequestTool.m in Sources */,
