@@ -70,6 +70,11 @@
 		BC5BEF3A1AFCD422002A053F /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5BEEFB1AFCD422002A053F /* SearchVC.m */; };
 		BC5BEF3D1AFCD464002A053F /* SquareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5BEF3C1AFCD464002A053F /* SquareVC.m */; };
 		BC5BEF401AFCD486002A053F /* HotTopicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5BEF3F1AFCD486002A053F /* HotTopicVC.m */; };
+		BCD498481AFCE04300BEA0E9 /* SFTactick.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498471AFCE04300BEA0E9 /* SFTactick.m */; };
+		BCD4984E1AFCE16500BEA0E9 /* SFLinkTitleList.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD4984D1AFCE16500BEA0E9 /* SFLinkTitleList.m */; };
+		BCD498511AFCE1C800BEA0E9 /* SFSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498501AFCE1C800BEA0E9 /* SFSearchModel.m */; };
+		BCD498541AFCE2B900BEA0E9 /* SFTactickBanners.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498531AFCE2B900BEA0E9 /* SFTactickBanners.m */; };
+		BCD4985A1AFCE5BD00BEA0E9 /* SFSearchDisplayModule.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498591AFCE5BD00BEA0E9 /* SFSearchDisplayModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -213,6 +218,16 @@
 		BC5BEF3C1AFCD464002A053F /* SquareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareVC.m; sourceTree = "<group>"; };
 		BC5BEF3E1AFCD486002A053F /* HotTopicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotTopicVC.h; sourceTree = "<group>"; };
 		BC5BEF3F1AFCD486002A053F /* HotTopicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotTopicVC.m; sourceTree = "<group>"; };
+		BCD498461AFCE04300BEA0E9 /* SFTactick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTactick.h; sourceTree = "<group>"; };
+		BCD498471AFCE04300BEA0E9 /* SFTactick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTactick.m; sourceTree = "<group>"; };
+		BCD4984C1AFCE16500BEA0E9 /* SFLinkTitleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLinkTitleList.h; sourceTree = "<group>"; };
+		BCD4984D1AFCE16500BEA0E9 /* SFLinkTitleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLinkTitleList.m; sourceTree = "<group>"; };
+		BCD4984F1AFCE1C800BEA0E9 /* SFSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSearchModel.h; sourceTree = "<group>"; };
+		BCD498501AFCE1C800BEA0E9 /* SFSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSearchModel.m; sourceTree = "<group>"; };
+		BCD498521AFCE2B900BEA0E9 /* SFTactickBanners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTactickBanners.h; sourceTree = "<group>"; };
+		BCD498531AFCE2B900BEA0E9 /* SFTactickBanners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTactickBanners.m; sourceTree = "<group>"; };
+		BCD498581AFCE5BD00BEA0E9 /* SFSearchDisplayModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSearchDisplayModule.h; sourceTree = "<group>"; };
+		BCD498591AFCE5BD00BEA0E9 /* SFSearchDisplayModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSearchDisplayModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -626,9 +641,9 @@
 		BC5BEEF81AFCD422002A053F /* Search(搜索) */ = {
 			isa = PBXGroup;
 			children = (
+				BCD498421AFCDF8000BEA0E9 /* view */,
+				BCD498411AFCDF7C00BEA0E9 /* model */,
 				BC5BEEF91AFCD422002A053F /* controller */,
-				BC5BEEFC1AFCD422002A053F /* model */,
-				BC5BEEFD1AFCD422002A053F /* view */,
 			);
 			path = "Search(搜索)";
 			sourceTree = "<group>";
@@ -642,23 +657,10 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		BC5BEEFC1AFCD422002A053F /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		BC5BEEFD1AFCD422002A053F /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
 		BC5BEEFE1AFCD422002A053F /* Square(广场) */ = {
 			isa = PBXGroup;
 			children = (
+				BCD498401AFCDF2600BEA0E9 /* view */,
 				BC5BEEFF1AFCD422002A053F /* controller */,
 				BC5BEF001AFCD422002A053F /* model */,
 				BC5BEF011AFCD422002A053F /* view */,
@@ -683,6 +685,37 @@
 			sourceTree = "<group>";
 		};
 		BC5BEF011AFCD422002A053F /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BCD498401AFCDF2600BEA0E9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BCD498411AFCDF7C00BEA0E9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BCD498461AFCE04300BEA0E9 /* SFTactick.h */,
+				BCD498471AFCE04300BEA0E9 /* SFTactick.m */,
+				BCD4984C1AFCE16500BEA0E9 /* SFLinkTitleList.h */,
+				BCD4984D1AFCE16500BEA0E9 /* SFLinkTitleList.m */,
+				BCD4984F1AFCE1C800BEA0E9 /* SFSearchModel.h */,
+				BCD498501AFCE1C800BEA0E9 /* SFSearchModel.m */,
+				BCD498521AFCE2B900BEA0E9 /* SFTactickBanners.h */,
+				BCD498531AFCE2B900BEA0E9 /* SFTactickBanners.m */,
+				BCD498581AFCE5BD00BEA0E9 /* SFSearchDisplayModule.h */,
+				BCD498591AFCE5BD00BEA0E9 /* SFSearchDisplayModule.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BCD498421AFCDF8000BEA0E9 /* view */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -807,8 +840,12 @@
 				BC5BEF021AFCD422002A053F /* MainNavigationC.m in Sources */,
 				BC5BEF111AFCD422002A053F /* GXCycleScrollView.m in Sources */,
 				BC5BEF141AFCD422002A053F /* MBProgressHUD.m in Sources */,
+				BCD4985A1AFCE5BD00BEA0E9 /* SFSearchDisplayModule.m in Sources */,
 				BC5BEF311AFCD422002A053F /* UIImage+MultiFormat.m in Sources */,
+				BCD4984E1AFCE16500BEA0E9 /* SFLinkTitleList.m in Sources */,
 				BC5BEF331AFCD422002A053F /* UIImageView+HighlightedWebCache.m in Sources */,
+				BCD498481AFCE04300BEA0E9 /* SFTactick.m in Sources */,
+				BCD498511AFCE1C800BEA0E9 /* SFSearchModel.m in Sources */,
 				BC5BEF051AFCD422002A053F /* MainTabBar.m in Sources */,
 				BC5BEF071AFCD422002A053F /* AFHTTPRequestOperation.m in Sources */,
 				BC5BEE4A1AFCCEB6002A053F /* AppDelegate.m in Sources */,
@@ -827,6 +864,7 @@
 				BC5BEE471AFCCEB6002A053F /* main.m in Sources */,
 				BC5BEF241AFCD422002A053F /* SDBallProgressView.m in Sources */,
 				BC5BEF1B1AFCD422002A053F /* MJTypeEncoding.m in Sources */,
+				BCD498541AFCE2B900BEA0E9 /* SFTactickBanners.m in Sources */,
 				BC5BEF191AFCD422002A053F /* MJMethod.m in Sources */,
 				BC5BEF1E1AFCD422002A053F /* NSObject+MJMember.m in Sources */,
 				BC5BEF341AFCD422002A053F /* UIImageView+WebCache.m in Sources */,
@@ -1023,6 +1061,7 @@
 				BC5BEE661AFCCEB6002A053F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC5BEE671AFCCEB6002A053F /* Build configuration list for PBXNativeTarget "ZaiLuShangTests" */ = {
 			isa = XCConfigurationList;
@@ -1031,6 +1070,7 @@
 				BC5BEE691AFCCEB6002A053F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
