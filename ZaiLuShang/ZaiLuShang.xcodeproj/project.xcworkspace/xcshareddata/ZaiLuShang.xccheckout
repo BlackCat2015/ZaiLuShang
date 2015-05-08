@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4738F745-3290-4DE7-AFD8-D26BC26E05C7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZaiLuShang</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B3E6663A8A8F76A60F2BD0BEC1F2EA42047315A2</key>
+		<string>https://github.com/ZaiLuShang1/ZaiLuShang.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ZaiLuShang/ZaiLuShang.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B3E6663A8A8F76A60F2BD0BEC1F2EA42047315A2</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ZaiLuShang1/ZaiLuShang.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B3E6663A8A8F76A60F2BD0BEC1F2EA42047315A2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B3E6663A8A8F76A60F2BD0BEC1F2EA42047315A2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZaiLuShang</string>
+		</dict>
+	</array>
+</dict>
+</plist>
