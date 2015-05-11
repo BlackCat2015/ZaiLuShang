@@ -14,6 +14,7 @@
 @property (nonatomic,copy) NSString *coverpic;
 @property (nonatomic,assign) NSUInteger stickercnt;
 @property (nonatomic,copy) NSString *describe2;
+@property (nonatomic,assign) NSUInteger pgcCnt;
 @property (nonatomic,assign) NSUInteger upid;
 @property (nonatomic,copy) NSString *pathstr;
 @property (nonatomic,assign) NSUInteger tag_id;

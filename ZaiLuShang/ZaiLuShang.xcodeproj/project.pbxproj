@@ -1220,6 +1220,11 @@
 		BC5BF83F1AFCE183002A053F /* logo_statusbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5BF3C11AFCE183002A053F /* logo_statusbar.png */; };
 		BC5BF8401AFCE183002A053F /* map_pop_single.9.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5BF3C21AFCE183002A053F /* map_pop_single.9.png */; };
 		BC5BF8411AFCE183002A053F /* subscription_pop.9.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5BF3C31AFCE183002A053F /* subscription_pop.9.png */; };
+		BCC8630C1B003F8000AF0D50 /* TextSizeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC8630B1B003F8000AF0D50 /* TextSizeTools.m */; };
+		BCC863101B0092E200AF0D50 /* SFSearchCountryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC8630E1B0092E200AF0D50 /* SFSearchCountryCell.m */; };
+		BCC863111B0092E200AF0D50 /* SFSearchCountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC8630F1B0092E200AF0D50 /* SFSearchCountryCell.xib */; };
+		BCC863141B00AAE200AF0D50 /* SFDetailTactickController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC863131B00AAE200AF0D50 /* SFDetailTactickController.m */; };
+		BCC863171B00C90500AF0D50 /* SFListTactickController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC863161B00C90500AF0D50 /* SFListTactickController.m */; };
 		BCD4986B1AFCF72B00BEA0E9 /* SFLinkTitleList.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498621AFCF72B00BEA0E9 /* SFLinkTitleList.m */; };
 		BCD4986C1AFCF72B00BEA0E9 /* SFSearchDisplayModule.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498641AFCF72B00BEA0E9 /* SFSearchDisplayModule.m */; };
 		BCD4986D1AFCF72B00BEA0E9 /* SFSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498661AFCF72B00BEA0E9 /* SFSearchModel.m */; };
@@ -1227,6 +1232,10 @@
 		BCD4986F1AFCF72B00BEA0E9 /* SFTactickBanners.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD4986A1AFCF72B00BEA0E9 /* SFTactickBanners.m */; };
 		BCD498741AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD498721AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.m */; };
 		BCD498751AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD498731AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.xib */; };
+		BCE2707A1AFE0166007D2749 /* SFTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE270781AFE0166007D2749 /* SFTitleCell.m */; };
+		BCE2707B1AFE0166007D2749 /* SFTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE270791AFE0166007D2749 /* SFTitleCell.xib */; };
+		BCE2707F1AFE0A3C007D2749 /* SFTactickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE2707D1AFE0A3C007D2749 /* SFTactickCell.m */; };
+		BCE270801AFE0A3C007D2749 /* SFTactickCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE2707E1AFE0A3C007D2749 /* SFTactickCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2520,6 +2529,15 @@
 		BC5BF3C11AFCE183002A053F /* logo_statusbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_statusbar.png; sourceTree = "<group>"; };
 		BC5BF3C21AFCE183002A053F /* map_pop_single.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pop_single.9.png; sourceTree = "<group>"; };
 		BC5BF3C31AFCE183002A053F /* subscription_pop.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = subscription_pop.9.png; sourceTree = "<group>"; };
+		BCC8630A1B003F8000AF0D50 /* TextSizeTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSizeTools.h; sourceTree = "<group>"; };
+		BCC8630B1B003F8000AF0D50 /* TextSizeTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSizeTools.m; sourceTree = "<group>"; };
+		BCC8630D1B0092E200AF0D50 /* SFSearchCountryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSearchCountryCell.h; sourceTree = "<group>"; };
+		BCC8630E1B0092E200AF0D50 /* SFSearchCountryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSearchCountryCell.m; sourceTree = "<group>"; };
+		BCC8630F1B0092E200AF0D50 /* SFSearchCountryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFSearchCountryCell.xib; sourceTree = "<group>"; };
+		BCC863121B00AAE200AF0D50 /* SFDetailTactickController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDetailTactickController.h; sourceTree = "<group>"; };
+		BCC863131B00AAE200AF0D50 /* SFDetailTactickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDetailTactickController.m; sourceTree = "<group>"; };
+		BCC863151B00C90500AF0D50 /* SFListTactickController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFListTactickController.h; sourceTree = "<group>"; };
+		BCC863161B00C90500AF0D50 /* SFListTactickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFListTactickController.m; sourceTree = "<group>"; };
 		BCD498611AFCF72B00BEA0E9 /* SFLinkTitleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLinkTitleList.h; sourceTree = "<group>"; };
 		BCD498621AFCF72B00BEA0E9 /* SFLinkTitleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLinkTitleList.m; sourceTree = "<group>"; };
 		BCD498631AFCF72B00BEA0E9 /* SFSearchDisplayModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSearchDisplayModule.h; sourceTree = "<group>"; };
@@ -2533,6 +2551,12 @@
 		BCD498711AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSceneryCellTableViewCell.h; sourceTree = "<group>"; };
 		BCD498721AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSceneryCellTableViewCell.m; sourceTree = "<group>"; };
 		BCD498731AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFSceneryCellTableViewCell.xib; sourceTree = "<group>"; };
+		BCE270771AFE0166007D2749 /* SFTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTitleCell.h; sourceTree = "<group>"; };
+		BCE270781AFE0166007D2749 /* SFTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTitleCell.m; sourceTree = "<group>"; };
+		BCE270791AFE0166007D2749 /* SFTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFTitleCell.xib; sourceTree = "<group>"; };
+		BCE2707C1AFE0A3C007D2749 /* SFTactickCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTactickCell.h; sourceTree = "<group>"; };
+		BCE2707D1AFE0A3C007D2749 /* SFTactickCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTactickCell.m; sourceTree = "<group>"; };
+		BCE2707E1AFE0A3C007D2749 /* SFTactickCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFTactickCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2898,6 +2922,8 @@
 				BC5BEEED1AFCD422002A053F /* RequestTool.h */,
 				BC5BEEEE1AFCD422002A053F /* RequestTool.m */,
 				BC5BEEEF1AFCD422002A053F /* SFImageView */,
+				BCC8630A1B003F8000AF0D50 /* TextSizeTools.h */,
+				BCC8630B1B003F8000AF0D50 /* TextSizeTools.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -2943,6 +2969,10 @@
 			children = (
 				BC5BEEFA1AFCD422002A053F /* SearchVC.h */,
 				BC5BEEFB1AFCD422002A053F /* SearchVC.m */,
+				BCC863121B00AAE200AF0D50 /* SFDetailTactickController.h */,
+				BCC863131B00AAE200AF0D50 /* SFDetailTactickController.m */,
+				BCC863151B00C90500AF0D50 /* SFListTactickController.h */,
+				BCC863161B00C90500AF0D50 /* SFListTactickController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -4192,6 +4222,15 @@
 				BCD498711AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.h */,
 				BCD498721AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.m */,
 				BCD498731AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.xib */,
+				BCE270771AFE0166007D2749 /* SFTitleCell.h */,
+				BCE270781AFE0166007D2749 /* SFTitleCell.m */,
+				BCE270791AFE0166007D2749 /* SFTitleCell.xib */,
+				BCE2707C1AFE0A3C007D2749 /* SFTactickCell.h */,
+				BCE2707D1AFE0A3C007D2749 /* SFTactickCell.m */,
+				BCE2707E1AFE0A3C007D2749 /* SFTactickCell.xib */,
+				BCC8630D1B0092E200AF0D50 /* SFSearchCountryCell.h */,
+				BCC8630E1B0092E200AF0D50 /* SFSearchCountryCell.m */,
+				BCC8630F1B0092E200AF0D50 /* SFSearchCountryCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -4454,6 +4493,7 @@
 				BC5BF5E11AFCE183002A053F /* btn_radio_off_disabled_holo_light.png in Resources */,
 				BC5BF7F01AFCE183002A053F /* nav_cancel_48_blue.png in Resources */,
 				BC5BF43B1AFCE183002A053F /* lining_popover_bg.9.9.png in Resources */,
+				BCE2707B1AFE0166007D2749 /* SFTitleCell.xib in Resources */,
 				BC5BF5DF1AFCE183002A053F /* btn_profile_score.9.png in Resources */,
 				BC5BF5EB1AFCE183002A053F /* btn_setting.png in Resources */,
 				BC5BF3CE1AFCE183002A053F /* bg_discover_box_top.9.png in Resources */,
@@ -4853,6 +4893,7 @@
 				BC5BF6911AFCE183002A053F /* icon_dest_want_on.png in Resources */,
 				BC5BF52A1AFCE183002A053F /* anime_trip_download0017.png in Resources */,
 				BC5BF49E1AFCE183002A053F /* tab_list.png in Resources */,
+				BCC863111B0092E200AF0D50 /* SFSearchCountryCell.xib in Resources */,
 				BC5BF7FD1AFCE183002A053F /* progress_bg_holo_light.9.png in Resources */,
 				BC5BF4E71AFCE183002A053F /* umeng_xp_shadow_bg.9.png in Resources */,
 				BC5BF6081AFCE183002A053F /* button_light.9.png in Resources */,
@@ -5117,6 +5158,7 @@
 				BC5BF4371AFCE183002A053F /* lining_notice.png in Resources */,
 				BC5BF3DC1AFCE183002A053F /* bg_select_date.9.png in Resources */,
 				BC5BF77C1AFCE183002A053F /* icon_tag_hotel_rainbow_40.png in Resources */,
+				BCE270801AFE0A3C007D2749 /* SFTactickCell.xib in Resources */,
 				BC5BF4091AFCE183002A053F /* filter_26.png in Resources */,
 				BC5BF80D1AFCE183002A053F /* share_sina_w.png in Resources */,
 				BC5BF7671AFCE183002A053F /* icon_tag_32_gray.png in Resources */,
@@ -5447,10 +5489,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC863171B00C90500AF0D50 /* SFListTactickController.m in Sources */,
 				BC5BEF2A1AFCD422002A053F /* SDWebImageDecoder.m in Sources */,
 				BC5BEF2D1AFCD422002A053F /* SDWebImageManager.m in Sources */,
 				BC5BEF221AFCD422002A053F /* MJRefreshFooterView.m in Sources */,
 				BC5BEF1C1AFCD422002A053F /* NSObject+MJCoding.m in Sources */,
+				BCC863101B0092E200AF0D50 /* SFSearchCountryCell.m in Sources */,
 				BCD4986D1AFCF72B00BEA0E9 /* SFSearchModel.m in Sources */,
 				BC5BEF231AFCD422002A053F /* MJRefreshHeaderView.m in Sources */,
 				BC5BEF101AFCD422002A053F /* AFURLSessionManager.m in Sources */,
@@ -5472,6 +5516,7 @@
 				BC5BEF311AFCD422002A053F /* UIImage+MultiFormat.m in Sources */,
 				BC5BEF331AFCD422002A053F /* UIImageView+HighlightedWebCache.m in Sources */,
 				BC5BEF051AFCD422002A053F /* MainTabBar.m in Sources */,
+				BCE2707A1AFE0166007D2749 /* SFTitleCell.m in Sources */,
 				BC5BEF071AFCD422002A053F /* AFHTTPRequestOperation.m in Sources */,
 				BC5BEE4A1AFCCEB6002A053F /* AppDelegate.m in Sources */,
 				BCD4986E1AFCF72B00BEA0E9 /* SFTactick.m in Sources */,
@@ -5481,6 +5526,7 @@
 				BC5BEF031AFCD422002A053F /* MainTabBarController.m in Sources */,
 				BC5BEF251AFCD422002A053F /* SDBaseProgressView.m in Sources */,
 				BC5BEF0B1AFCD422002A053F /* AFNTool.m in Sources */,
+				BCC8630C1B003F8000AF0D50 /* TextSizeTools.m in Sources */,
 				BC5BEF2C1AFCD422002A053F /* SDWebImageDownloaderOperation.m in Sources */,
 				BC5BEF091AFCD422002A053F /* AFHTTPSessionManager.m in Sources */,
 				BC5BEF1A1AFCD422002A053F /* MJType.m in Sources */,
@@ -5503,9 +5549,11 @@
 				BC5BEF271AFCD422002A053F /* NSData+ImageContentType.m in Sources */,
 				BC5BEF151AFCD422002A053F /* MyMD5.m in Sources */,
 				BCD498741AFCF73000BEA0E9 /* SFSceneryCellTableViewCell.m in Sources */,
+				BCE2707F1AFE0A3C007D2749 /* SFTactickCell.m in Sources */,
 				BC5BEF1D1AFCD422002A053F /* NSObject+MJKeyValue.m in Sources */,
 				BC5BEF0F1AFCD422002A053F /* AFURLResponseSerialization.m in Sources */,
 				BC5BEF371AFCD422002A053F /* RequestTool.m in Sources */,
+				BCC863141B00AAE200AF0D50 /* SFDetailTactickController.m in Sources */,
 				BC5BEF171AFCD422002A053F /* MJIvar.m in Sources */,
 				BC5BEF2F1AFCD422002A053F /* UIButton+WebCache.m in Sources */,
 				BC5BEF391AFCD422002A053F /* PersonVC.m in Sources */,

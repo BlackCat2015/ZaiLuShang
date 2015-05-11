@@ -35,6 +35,8 @@
  */
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "TextSizeTools.h"
+#import "SFImageView.h"
 
 // 判读是否是ios7
 #define iOS7   ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
@@ -64,4 +66,7 @@
 #define CXColor(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
 #define CXColorP(r,g,b,p) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:p/1]
 
+//字体
+#define TextFont_17 [UIFont systemFontOfSize:17]
+#define TextFont_15 [UIFont systemFontOfSize:15]
 

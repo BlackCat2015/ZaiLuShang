@@ -9,6 +9,7 @@
 #import "SFImageView.h"
 #import "SDBallProgressView.h"
 #import "SDWebImageManager.h"
+#import "UIImageView+WebCache.h"
 #define SCALE 0.4
 #define IMAGEVIEW_BACKGROUND [UIColor lightGrayColor]
 @implementation SFImageView
@@ -38,6 +39,8 @@
 
 -(void)setImageWithUrl:(NSURL *)url
 {
+    //[self sd_setImageWithURL:url];
+    
     SDWebImageManager * manager = [SDWebImageManager sharedManager];
     [manager downloadImageWithURL:url options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
         CGFloat progress =(CGFloat)receivedSize/(CGFloat)expectedSize;
@@ -48,12 +51,13 @@
         [progressView dismiss];
         self.image = image;
     }];
+    
 
 }
 
 -(void)setImageWithUrl:(NSString *)url withPlaceHolderImage:(NSString *)placeHolder
 {
     [self setImageWithUrl:[NSURL URLWithString:url]];
-    [self setPlaceHolderImageWithNamed:placeHolder];
+   // [self setPlaceHolderImageWithNamed:placeHolder];
 }
 @end

@@ -1,65 +1,67 @@
 //
-//  SearchVC.m
-//  ChanYouJi
+//  SFListTactickController.m
+//  ZaiLuShang
 //
-//  Created by gaocaixin on 15/5/7.
+//  Created by qianfeng on 15/5/11.
 //  Copyright (c) 2015年 qianfeng. All rights reserved.
-//bbtb
+//
 
-#import "SearchVC.h"
+#import "SFListTactickController.h"
 #import "RequestTool.h"
 #import "SFSearchModel.h"
-#import "SFLinkTitleList.h"
 #import "SFTactick.h"
-#import "SFTactickBanners.h"
+#import "SFLinkTitleList.h"
 #import "SFSearchDisplayModule.h"
-#import "SFTitleCell.h"
-#import "SFSceneryCellTableViewCell.h"
 #import "SFTactickCell.h"
+#import "SFSceneryCellTableViewCell.h"
 #import "SFSearchCountryCell.h"
 #import "SFDetailTactickController.h"
-#import "SFListTactickController.h"
 #define  TITLE_TYPE 88 //标题
 #define  TACTICK_TYPE 90 //攻略
 #define  OTHER_TYPE 18 //其他
 #define  SHOW_TYPE_SECENER  @"tag_2_1"
 #define  SHOW_TYPE_COUNTRY  @"tag_2_3"
-#define TACTICK_URL @"http://www.117go.com/article/osaka-koutsu?refer=DiscoverHome&token=5aa634ad2fd021650587afa999fdd184&v=a6.1.0&vc=anzhuo&vd=a1c9d9b8a69b4bf4&userid=22506751"
-#define SEARCH_MAIN_URL @"http://app6.117go.com/demo27/php/interestAction.php?submit=getDiscoverHome&length=20&vc=anzhuo&vd=a1c9d9b8a69b4bf4&token=5aa634ad2fd021650587afa999fdd184&v=a6.1.0"
-@interface SearchVC ()<UITableViewDataSource,UITableViewDelegate>
+#define URL @"http://app6.117go.com/demo27/php/interestAction.php?submit=getDiscoverDir&pid=%d&length=10&vc=anzhuo&vd=a1c9d9b8a69b4bf4&token=5aa634ad2fd021650587afa999fdd184&v=a6.1.0"
+@interface SFListTactickController ()
 {
-    UITableView * _tableView;
+    NSInteger pid;
 }
 @property (nonatomic,strong)NSMutableArray * dataArray;
 @end
 
-@implementation SearchVC
+@implementation SFListTactickController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self createTableView];
     [self loadData];
+    [self createNav];
+    
 }
-#pragma mark -创建tableview
--(void)createTableView
+#pragma mark -创建nav
+-(void)createNav{
+    self.navigationItem.title = [[self.searchModel.listArray firstObject] title];
+    UIButton * backBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
+    [backBtn setImage:[UIImage imageNamed:@"nav_back_48_white"] forState:UIControlStateNormal];
+    backBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    [backBtn addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:backBtn];
+}
+
+-(void)backClick
 {
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-49) style:UITableViewStylePlain];
-    [self.view addSubview:_tableView];
-    _tableView.delegate =self;
-    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    _tableView.dataSource = self;
+    [self.navigationController popViewControllerAnimated:YES];
 }
-#pragma mark -加载数据
 -(void)loadData
 {
     if (nil==_dataArray) {
         _dataArray = [[NSMutableArray alloc]init];
     }
-    [RequestTool GET:SEARCH_MAIN_URL parameters:nil success:^(id responseObject) {
+    [self getPID];
+    [RequestTool GET:[NSString stringWithFormat:URL,pid] parameters:nil success:^(id responseObject) {
         NSArray * tempArray =responseObject[@"obj"][@"list"];
         for (NSDictionary * dic in tempArray) {
-            SFSearchModel * searchModel = [[SFSearchModel alloc]init];
-            [searchModel setValuesForKeysWithDictionary:dic];
+            SFSearchModel * searchModels = [[SFSearchModel alloc]init];
+            [searchModels setValuesForKeysWithDictionary:dic];
             //list 数据
             NSArray * tempList = dic[@"list"];
             //临时数组
@@ -72,7 +74,7 @@
                     [linkTitleList setValuesForKeysWithDictionary:listDic];
                     [mulList addObject:linkTitleList];
                 }
-                searchModel.listArray =mulList;
+                searchModels.listArray =mulList;
                 
             }else if(TACTICK_TYPE ==[dic[@"type"] integerValue]){
                 //攻略
@@ -85,7 +87,7 @@
                     tractic.banner =banners;
                     [mulList addObject:tractic];
                 }
-                searchModel.listArray =mulList;
+                searchModels.listArray =mulList;
             }else if(OTHER_TYPE ==[dic[@"type"] integerValue]){
                 //其他
                 for (NSDictionary * listDic  in tempList) {
@@ -93,25 +95,31 @@
                     [sdm setValuesForKeysWithDictionary:listDic];
                     [mulList addObject:sdm];
                 }
-                searchModel.listArray =mulList;
+                searchModels.listArray =mulList;
             }
-            [_dataArray addObject:searchModel];
+            [_dataArray addObject:searchModels];
         }
-         [_tableView reloadData];
+        [self.tableView reloadData];
     } failure:^(NSError *error) {
-        NSLog(@"%@",error.localizedDescription);
+         CXLog(@"%@",error.localizedDescription);
     }];
-    
+
 }
 
-#pragma mark -代理方法
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+-(void)getPID
 {
-     return _dataArray.count;
+    SFTactick * tactick =self.searchModel.listArray.firstObject;
+    NSArray * tempArray =[tactick.link componentsSeparatedByString:@"pid="];
+    pid = [tempArray[1] integerValue];
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return _dataArray.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     int num =[[_dataArray[section] listArray] count];
     if (num>1) {
         return num*0.5;
@@ -119,15 +127,10 @@
     return num;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     SFSearchModel * model = _dataArray[indexPath.section];
-    if (TITLE_TYPE == model.type) {
-        //title
-        SFTitleCell * cell = [SFTitleCell cellWithTableView:tableView];
-        cell.searchModel =model;
-        return cell;
-    }else if (TACTICK_TYPE==model.type){
+    if (TACTICK_TYPE==model.type){
         //攻略
         SFTactickCell * cell=  [SFTactickCell cellWithTableView:tableView];
         cell.searchModel =model;
@@ -163,7 +166,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-     SFSearchModel * model = _dataArray[indexPath.section];
+    SFSearchModel * model = _dataArray[indexPath.section];
     if (TACTICK_TYPE==model.type) {
         return SCREEN_WIDTH*HUANGJINGSHU*0.5;
     }else if ([SHOW_TYPE_SECENER isEqualToString:model.showType]){
@@ -173,10 +176,9 @@
         //国家
         return SCREEN_WIDTH*0.5*HUANGJINGSHU;
     }else{
-        //标题
         return 44.0;
     }
-   
+    
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -188,11 +190,8 @@
         SFDetailTactickController * detailTactickController = [[SFDetailTactickController alloc]init];
         detailTactickController.searchModel =model;
         [self.navigationController pushViewController:detailTactickController animated:YES];
-    }else if (TITLE_TYPE ==model.type){
-        SFListTactickController * listTactickController = [[SFListTactickController alloc]initWithStyle:UITableViewStylePlain];
-        listTactickController.searchModel =model;
-        [self.navigationController pushViewController:listTactickController animated:YES];
     }
 }
+
 
 @end
