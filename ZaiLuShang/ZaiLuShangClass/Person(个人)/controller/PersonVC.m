@@ -9,7 +9,7 @@
 #import "PersonVC.h"
 
 @interface PersonVC ()
-
+@property (nonatomic ,weak) UITableView *tableView;
 @end
 
 @implementation PersonVC
@@ -17,21 +17,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self createTableView];
+    
     [self createTitleView];
 }
 
 - (void)createTitleView
 {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, HEIGHT_STA, CGW(self.view), HEIGHT_NAV)];
-    view.backgroundColor = CXColorP(150, 150, 150, 0.2);
-    view.userInteractionEnabled = YES;
-    [self.view addSubview:view];
-    
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGW(self.view), CGH(view))];
-    label.text = @"未登录";
-    label.center = view.center;
-    label.textColor = [UIColor whiteColor];
-    [view addSubview:label];
+
 }
+- (void)createTableView
+{
+    UITableView *table = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    [self.view addSubview:table];
+    self.tableView = table;
+    
+    
+}
+
 
 @end
